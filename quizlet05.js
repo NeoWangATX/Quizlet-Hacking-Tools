@@ -10,6 +10,7 @@
 // ==/UserScript==<
 
 //Ignore the variable gravityScore because it doesn't work any more, but I decided to keep the code here
+var timeInMilliseconds = 4900;
 var gravityScore,
 	 href = window.location.href;
 	//<br><br><button class="UIButton" id="customWaitButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>
@@ -200,7 +201,7 @@ var gravityScore,
 						clearTimeout(matchLoop);
 					}
 				}
-			}, 500);
+			}, 300);
 		}
 
 		function micromatch() {
@@ -232,7 +233,7 @@ var gravityScore,
 						n.initEvent(t, !0, !1), e.dispatchEvent(n);
 					}
 				}
-			}, 500);
+			}, timeInMilliseconds);
 		}
 
 		function learn() {
